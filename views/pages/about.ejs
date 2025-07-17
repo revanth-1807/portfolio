@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head') %>
+    <title>About Me</title>
+    <style>
+      /* Additional section-specific styles */
+      .about {
+        padding: 80px 20px;
+        background: #fdfdfd;
+        font-family: 'Segoe UI', sans-serif;
+        color: #333;
+      }
+
+      .about h1 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .about p {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .about h2 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 28px;
+      }
+
+      .skills-container {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+      }
+
+      .skill-pill {
+        background: rgba(255, 255, 255, 0.25);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #333;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease, background 0.3s ease;
+      }
+
+      .skill-pill:hover {
+        background: rgba(0, 123, 255, 0.15);
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('../partials/header') %>
+
+    <section class="about">
+      <div class="container">
+        <h1>About Me</h1>
+        <p>
+          Hello! I'm <strong>Surisetti Revanth kumar</strong>, a passionate Backend Developer with strong interest in AI and Prompt Engineering.
+          I enjoy building fast, scalable web applications and working with modern tech stacks. I'm currently focused on
+          learning advanced DSA, full-stack systems, and creating smart bots using AI.
+        </p>
+
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skill-pill">C</div>
+          <div class="skill-pill">Java</div>
+          <div class="skill-pill">Python</div>
+          <div class="skill-pill">DSA</div>
+          <div class="skill-pill">HTML & CSS</div>
+          <div class="skill-pill">JavaScript</div>
+          <div class="skill-pill">Node.js</div>
+          <div class="skill-pill">Express.js</div>
+          <div class="skill-pill">MongoDB</div>
+          <div class="skill-pill">EJS</div>
+          <div class="skill-pill">React.js</div>
+          <div class="skill-pill">Bootstrap</div>
+          <div class="skill-pill">Tailwind CSS</div>
+          <div class="skill-pill">Prompt Engineering</div>
+          <div class="skill-pill">Git & GitHub</div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('../partials/footer') %>
+  </body>
+</html>
