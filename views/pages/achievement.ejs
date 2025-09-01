@@ -1,37 +1,116 @@
 <head>
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    .achievements-section {
+      padding: 60px 20px;
+      background: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .achievements-section h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .achievements-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .achievement-card {
+      background: white;
+      border-radius: 16px;
+      padding: 25px;
+      max-width: 300px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .achievement-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(255, 105, 180, 0.3);
+    }
+
+    .achievement-card h4 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #222;
+    }
+
+    .achievement-card p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .achievement-card a {
+      display: inline-block;
+      margin-bottom: 8px;
+      color: #e91e63;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .achievement-card a:hover {
+      color: #ad1457;
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <%- include('../partials/header') %>
+
 <section id="achievements" class="achievements-section">
   <div class="container">
-    <h2>🏆 Achievements</h2>
+    <h2 data-aos="fade-down" data-aos-duration="1000">🏆 Achievements</h2>
 
     <div class="achievements-list">
-      <div class="achievement-card">
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="0">
+        <h4>Internship with Infosys SpringBoard</h4>
+        <p>Currently Working As an AI-Engineer in the intern provided by Infosys SpringBoard</p>
+
+      </div>
+
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="0">
         <h4>Internship with CodeAlpha</h4>
         <p>Better Experience and Achieved A certificate and LOR.</p>
-        <a href="/CC.pdf" target="_blank">Completion certificate</a>
-        <br>
-        <a href="/LOR.pdf"  target="_blank">View LOR</a><br>
+        <a href="/CC.pdf" target="_blank">Completion certificate</a><br>
+        <a href="/LOR.pdf" target="_blank">View LOR</a><br>
         <a href="./Codealpha.ejs">View projects</a>
       </div>
 
-      <div class="achievement-card">
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
         <h4>Developed many Projects</h4>
         <p>Designed and deployed a real-time chat application using Node.js, Express, MongoDB, and Socket.io.</p>
         <a href="./projects.ejs">View All projects</a>
       </div>
 
-      <div class="achievement-card">
-        <h4>Hackathon Participation At SASI INSTITUTE OF TECHNOLOGY AND ENGINEERING</h4>
-        <p>Led a 4-member team to the finals with a working prototype solving a real-world problem on Online interview System.</p>
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+        <h4>Hackathon Participation</h4>
+        <p>Me and my team participated in hackthon At SASI INSTITUTE OF TECHNOLOGY AND ENGINEERING for working on Interview simulation project</p>
         <a href="/Hackthon.png" target="_blank">View certificate</a>
       </div>
 
-      <div class="achievement-card">
+      <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
         <h4>Certifications</h4>
-        <p>Achieved Many Certifications like java , c , python etc ..</p>
+        <p>Achieved Many Certifications like Java, C, Python, etc.</p>
         <a href="./certificates.ejs">View all certificates</a>
       </div>
+    </div>
+  </div>
 </section>
+
 <%- include('../partials/footer') %>
+
+<!-- AOS Animation JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
