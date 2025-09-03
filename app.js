@@ -21,6 +21,4 @@ const pageRoutes = require('./routes/pages');
 app.use('/', pageRoutes);
 
 // Start server
-app.listen(9000, () => {
-  console.log('Server started on http://localhost:9000');
-});
+module.exports = app; 
